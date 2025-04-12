@@ -9,7 +9,7 @@ import { Job } from './job/job.entity';
       type: 'postgres',
       host: process.env.DB_HOST || 'localhost',
       
-      // port: parseInt(process.env.DB_PORT || '6543', 10),
+      // port: parseInt(process.env.DB_PORT || '6543', 10),   //(this we will use for deployment)
       port: parseInt(process.env.DB_PORT || '5432', 10),
       username: process.env.DB_USER || 'postgres',
       password: process.env.DB_PASS || 'root',

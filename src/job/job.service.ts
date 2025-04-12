@@ -13,7 +13,9 @@ export class JobService {
   findAll(): Promise<Job[]> {
     return this.jobRepository.find();
   }
-
+  // async findAll(): Promise<Job[]> {
+  //   return this.jobRepository.find(); // postedDate will be included automatically
+  // }
 
   findOne(id: number): Promise<Job | null> {
     return this.jobRepository.findOneBy({ id });

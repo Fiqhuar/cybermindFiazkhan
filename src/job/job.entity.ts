@@ -29,4 +29,7 @@ export class Job {
 
   @Column()
   description: string;
+
+  @Column({ name: 'posted_on', type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
+  postedDate: Date;
 }

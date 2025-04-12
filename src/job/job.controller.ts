@@ -18,6 +18,12 @@ export class JobController {
   async findAll(): Promise<Job[]> {
     return this.jobService.findAll();
   }
+  // job.controller.ts
+// @Get()
+// async getAllJobs(): Promise<Job[]> {
+//   return this.jobService.findAll();
+// }
+
 
   // GET /jobs/:id – retrieve a job by id
   @Get(':id')
